@@ -1,6 +1,6 @@
+import math
 from random import gauss
 from typing import List, Optional
-import math
 
 
 class Neuron:
@@ -104,4 +104,3 @@ class Neuron:
 if __name__ == "__main__":
     perceptron = Neuron(10)
     print(perceptron._mse(1, 1))
-
