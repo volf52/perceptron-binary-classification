@@ -58,4 +58,5 @@ if __name__ == "__main__":
 
     assert len(trainX) > 0
     perceptron = Neuron(len(trainX[0]))
-    print(perceptron._nInp)
+    perceptron.fit(trainX, trainY, epochs=500)
+    print(perceptron.getAcccuracy(testX, testY))
